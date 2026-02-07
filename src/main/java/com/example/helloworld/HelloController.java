@@ -27,12 +27,14 @@ public class HelloController {
         if("suma".equals(oper)){
             return "Resultado: " + (n1 + n2);
         }
+        if("resta".equals(oper)){
+            return "Resultado: " + (n1 - n2);
+        }
+        if("multiplicacion".equals(oper)){
+            return "Resultado: " + (n1 * n2);
+        }
         return "Operación no soportada";
     }
 	
 	
-	@GetMapping("/hello")
-    public String hello() {
-        return "Hello ";
-    }
 }
